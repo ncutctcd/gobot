@@ -50,7 +50,7 @@ func NewPWMPin(pin int) *PWMPin {
 	return &PWMPin{
 		pin:     strconv.Itoa(pin),
 		enabled: false,
-		Path:    "/sys/class/pwm/pwmchip0",
+		Path:    "/sys/class/pwm/pwmchip3",
 		read:    readPwmFile,
 		write:   writePwmFile}
 }
